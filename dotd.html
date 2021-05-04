@@ -1,0 +1,50 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="js/tmi.min.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/const.js"></script>
+	<script src="js/drivers.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/app.js"></script>
+	<link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="styles/teams.css" />
+</head>
+<body>
+
+<vote class="vote">
+
+	<div id="headerDiv"><img src="graphic/header.png" id="header" /></div>
+	<div id="prevote" class="voteNow prevote">
+		ZAGŁOSUJ NA SWOJEGO KANDYDATA POPRZEZ WPISANIE JEGO NAZWISKA NA CZACIE
+	</div>
+	<div id="voting" style="display: none">
+		<div id="votesDiv" class="latestPoll">
+			<div class="top" id="latestPoll">OSTATNIE WYNIKI:
+				<hr width="60%" class="line"></div>
+			<div class="name" id="first"><span class="place">1.<br/></span><span id="fName" class="driverName"></span><span class="percentage"></span></div>
+			<div class="name" id="second"><span class="place">2.<br /></span><span id="sName" class="driverName"></span><span class="percentage"></span></div>
+			<div class="name" id="third"><span class="place">3.<br /></span><span id="tName" class="driverName"></span><span class="percentage"></span></div>
+		</div>
+		<div class="voteNow">
+			GŁOSUJ WPISUJĄC NAZWISKO KIEROWCY NA CZACIE
+		</div>
+	</div>
+	<div id="results" style="display:none;">
+		<div id="dotdDiv"><img src="photos/shade.png" id="dotdPhoto" /></div>
+		<div id="bottomBarTwo">
+			<div id="text">
+				<div id="percents"></div>
+				<div id="votes">GŁOSÓW</div>
+			</div>
+		</div>
+		<div id="bottomDiv">
+			<img src="graphic/bottom.png" id="bottom" />
+			<div id="rectangle"></div>
+			<div id="nameSurname"></div>
+		</div>
+	</div>
+</vote>
+</body>
+</html>
