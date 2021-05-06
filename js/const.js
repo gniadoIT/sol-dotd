@@ -5,3 +5,4 @@ first = {};
 second = {};
 third = {};
 timeout = 400;
+voteStartPause = 2;

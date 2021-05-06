@@ -1,3 +1,4 @@
 channelName = "gndev";
-timer = 6;
+timer = 10;
 prevote = 3;
+presentDriverPause = 2;

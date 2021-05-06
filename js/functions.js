@@ -65,21 +65,24 @@ function refreshResults(){
 }
 
 function openVotings(){
-    $("#prevote").fadeOut();
-    setTimeout(function () {
-        $("#voting").fadeIn();
-    }, timeout);
+    $("#all").fadeOut(500);
+    setTimeout(function(){
+    $("#prevote").toggle();
+    $("#voting").toggle();}, 1000);
+    setTimeout(function(){$("#all").fadeIn(500)}, voteStartPause*1000);
 }
 
 function presentDriver(){
-    hideVoting();
-    setTimeout(function () {
+    $("#all").fadeOut(500);
+    setTimeout(function() {
+        $("#voting").toggle();
         loadPhoto();
         setWinnerName();
         setWinnerTeam();
         setWinnerPercents();
-        showResults();
-    }, timeout);
+        $("#results").toggle();
+    }, 1000);
+    setTimeout(function(){$("#all").fadeIn(500)}, presentDriverPause * 1000);
 
 }
 

@@ -29,3 +29,4 @@
     - channelName - nazwa kanału, np. scigalka_tv
     - timer - czas trwania głosowania W SEKUNDACH
     - prevote - czas trwania planszy prevote (bez pokazywanych procentów) W SEKUNDACH
+    - presentDriverPause - czas trwania pauzy przed ogłoszeniem wyników W SEKUNDACH
