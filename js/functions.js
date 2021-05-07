@@ -75,29 +75,30 @@ function openVotings(){
 function presentDriver(){
     $("#all").fadeOut(500);
     setTimeout(function() {
-        $("#voting").toggle();
+        hideVoting();
         loadPhoto();
         setWinnerName();
         setWinnerTeam();
         setWinnerPercents();
-        $("#results").toggle();
+        showResults();
     }, 1000);
     setTimeout(function(){$("#all").fadeIn(500)}, presentDriverPause * 1000);
 
 }
 
 function hideVoting() {
-    $("#voting").fadeOut();
+    $("#voting").toggle();
 }
 
 function loadPhoto() {
     const xhr = new XMLHttpRequest();
+    var url = "photos/" + removePolish(first.name.toLowerCase()) + ".png";
     xhr.onload = () => {
         if (xhr.status == 200) {
-            $("#dotdPhoto").attr("src", "photos/" + first.name.toLowerCase() + ".png");
+            $("#dotdPhoto").attr("src", url);
         }
     };
-    xhr.open("HEAD", "photos/" + first.name.toLowerCase() + ".png");
+    xhr.open("HEAD", url);
     xhr.send();
 }
 
@@ -114,18 +115,22 @@ function setWinnerPercents() {
 }
 
 function showResults() {
-    $("#results").fadeIn();
+    $("#results").toggle();
 }
 
 function removePolish(str){
-    str = str.replaceAll("ą", "a");
-    str = str.replaceAll("ć", "c");
-    str = str.replaceAll("ę", "e");
-    str = str.replaceAll("ł", "l");
-    str = str.replaceAll("ó", "o");
-    str = str.replaceAll("ń", "n");
-    str = str.replaceAll("ś", "s");
-    str = str.replaceAll("ż", "z");
-    str = str.replaceAll("ź", "z");
+    str = replace(str, "ą", "a");
+    str = replace(str, "ć", "c");
+    str = replace(str, "ę", "e");
+    str = replace(str, "ł", "l");
+    str = replace(str, "ó", "o");
+    str = replace(str, "ń", "n");
+    str = replace(str, "ś", "s");
+    str = replace(str, "ż", "z");
+    str = replace(str, "ź", "z");
     return str;
+}
+
+function replace(text, char, rep){
+    return text.split(char).join(rep);
 }
