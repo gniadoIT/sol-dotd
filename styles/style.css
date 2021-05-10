@@ -6,20 +6,13 @@ body {
     background-color: transparent;
 }
 
+.vote{
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+}
+
 #headerDiv {
-    width: 300px;
-    height: auto;
-    clear: both;
-}
-
-.headerDiv {
-    width: 300px;
-    height: auto;
-    clear: both;
-}
-
-#bottomDiv {
-    position: relative;
     width: 300px;
     height: auto;
     clear: both;
@@ -35,8 +28,91 @@ body {
     height: auto;
 }
 
-#bottom {
+.headerDiv {
     width: 300px;
+    height: auto;
+    clear: both;
+}
+
+.prevote {
+    background-color: rgba(0,0,0,0.7);
+    padding-top: 35px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 270px;
+}
+
+.voteNow{
+    width: 290px;
+    background-color: black;
+    color: white;
+    font-family: Formula1font;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px 5px !important;
+    margin-top: -11px;
+    border-bottom-right-radius: 25px;
+}
+
+#votesDiv {
+    width: 290px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.latestPoll {
+    font-family: Formula1font, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.line {
+    border: 0; height: 0; box-shadow: 0 0 3px 1px white;
+}
+
+.latestPoll .top{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.latestPoll .name{
+    position: relative;
+    top:-30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.latestPoll .name #third {
+    margin-bottom: -15px;
+}
+
+.latestPoll .name .place {
+    position:relative; top: 22px;
+}
+
+.latestPoll .name .percentage {
+    float: right;
+    position: relative; right:10px;color:red;font-size: 40px;
+}
+
+.latestPoll .name .driverName {
+    position: relative;
+    top: 20px;
+}
+
+#dotdDiv {
+    width: 300px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#dotdPhoto {
+    margin-top: -40px;
+    margin-bottom: -50px;
+    margin-left: -20px;
+    width: 350px;
     height: auto;
 }
 
@@ -70,6 +146,19 @@ body {
     font-size: 30px;
 }
 
+#bottomDiv {
+    position: relative;
+    width: 300px;
+    height: auto;
+    clear: both;
+}
+
+#bottom {
+    width: 300px;
+    height: auto;
+}
+
+
 #rectangle {
     position: absolute;
     top: 8px;
@@ -101,89 +190,3 @@ body {
     font-size: 20px;
 }
 
-#dotdPhoto {
-    margin-top: -40px;
-    margin-bottom: -50px;
-    margin-left: -20px;
-    width: 350px;
-    height: auto;
-}
-
-#dotdDiv {
-    width: 300px;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-#votesDiv {
-    width: 290px;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.latestPoll {
-    font-family: Formula1font, sans-serif;
-    color: white;
-    font-size: 20px;
-    padding: 5px;
-}
-
-.latestPoll .top{
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-.voteNow{
-    width: 290px;
-    background-color: black;
-    color: white;
-    font-family: Formula1font;
-    text-align: center;
-    font-weight: bolder;
-    padding: 10px 5px;
-    margin-top: -11px;
-    border-bottom-right-radius: 25px;
-}
-
-.latestPoll .name{
-    position: relative;
-    top:-30px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-
-.latestPoll .name #third {
-    margin-bottom: -15px;
-}
-
-.latestPoll .name .place {
-    position:relative; top: 22px;
-}
-
-.latestPoll .name .percentage {
-    float: right;
-    position: relative; right:10px;color:red;font-size: 40px;
-}
-
-.latestPoll .name .driverName {
-    position: relative;
-    top: 20px;
-}
-
-.line {
-    border: 0; height: 0; box-shadow: 0 0 3px 1px white;
-}
-
-.prevote {
-    background-color: rgba(0,0,0,0.7);
-    padding-top: 35px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 270px;
-}
-
-.vote{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-}
